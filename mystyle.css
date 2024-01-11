@@ -1,0 +1,874 @@
+body {
+  overflow-x: hidden;
+}
+
+body,
+html {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-weight: bold;
+  height: 100vh;
+  background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('images/BG-PAGE.png');
+  background-size: 500px;
+  background-repeat: repeat-x repeat-y;
+}
+
+/*--------------------------------------------------------------
+# Home Page
+--------------------------------------------------------------*/
+
+
+/* NAVBAR */
+
+.navbar {
+  box-shadow: 0px 1px 10px rgb(42, 61, 61);
+  background-color: #038222 !important;
+  font-family: Garamond, serif;
+}
+
+.navbar .navbar-nav .nav-link,
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus {
+  color: white !important;
+  text-shadow: 1px 1px 5px black;
+  transition: color 0.3s ease;
+}
+
+.navbar-brand {
+  color: white !important;
+  text-shadow: 1px 1px 5px black;
+  margin-left: 15px;
+}
+
+#headerNav .navbar-nav .nav-link {
+  transition: color 0.3s ease;
+  color: white;
+}
+
+#headerNav .navbar-nav .nav-link:hover,
+#headerNav .navbar-nav .nav-link:focus {
+  color: #038222 !important;
+}
+
+.dropdown-menu .dropdown-item {
+  color: #038222;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover {
+  color: #e7d623;
+}
+
+.dropdown-menu .dropdown-item:focus {
+  color: white;
+  background-color: #038222;
+}
+
+.btn-primary {
+  /* align-self: flex-start; */
+  transition: all 0.3s ease;
+  background-color: #038222;
+  border-color: #038222;
+  color: white;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: white !important;
+  color: #038222 !important;
+  border-color: #038222 !important;
+}
+
+/* HERO */
+
+.hero-image {
+  background-image: linear-gradient(rgba(5, 26, 4, 0.5), rgba(5, 26, 4, 0.7)), url("images/heroimg.jpg");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  box-shadow: 5px 5px 30px 15px rgba(65, 94, 95, 0.5);
+}
+
+.hero-text {
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.clinic-name {
+  font-style: normal;
+  white-space: nowrap;
+  margin-bottom: 10px;
+  font-size: 4vw;
+  margin-top: -10px;
+  color: #e7d623;
+}
+
+.button {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9355em;
+  box-sizing: border-box;
+  color: #038222;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 3.50em;
+  min-width: 0;
+  outline: none;
+  padding: 1em 2.3em;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.button:disabled {
+  pointer-events: none;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* ABOUT US */
+
+.about .content h3 {
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.about .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about .content ul li {
+  padding-bottom: 10px;
+}
+
+.about .content ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #038222;
+}
+
+.about .content p:last-child {
+  margin-bottom: 0;
+}
+
+.section-title {
+  color: #038222;
+  margin-top: 90px;
+  text-shadow: 1px 1px black;
+}
+
+.hr1 {
+  background-color: #9e948a;
+  width: 20%;
+  height: 2px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.about-us {
+  font-family: Georgia, serif;
+  text-align: center;
+  font-size: 3.5vw;
+  margin-bottom: 30px;
+}
+
+.about-caption {
+  text-align: justify;
+  color: #867b6f;
+  font-size: 1.5vw;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 13px 0px 13px;
+  margin-top: 5%;
+}
+
+.about-img {
+  width: 150px;
+  height: 50px;
+}
+
+
+/* TEAM */
+
+.services-title {
+  color: #038222;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 90px;
+}
+
+.services .service {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(65, 94, 95, 0.5);
+  padding: 30px 20px;
+  background: rgb(243, 241, 241);
+}
+
+.services .service2 {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(65, 94, 95, 0.5);
+  padding: 30px 20px;
+  background: #038222;
+}
+
+.services .service img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.services .service2 img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.services .service h4 {
+  color: #038222;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.services .service2 h4 {
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.services .service p {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #867b6f;
+  padding-top: 15px;
+}
+
+.services .service2 p {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #fff;
+  padding-top: 15px;
+}
+
+.staff-button .a {
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-light:hover,
+.btn-light:focus {
+  background-color: white !important;
+  color: #e7d623 !important;
+  border-color: #038222 !important;
+}
+
+
+/* WHY US */
+
+.why-container {
+  height: 30vw;
+}
+
+.why-us {
+
+  margin-top: 70px;
+  margin-bottom: 50px;
+  background: #038222;
+  padding: 80px 0;
+  box-shadow: 5px 5px 30px 15px rgba(65, 94, 95, 0.5);
+}
+
+.why-us h1 {
+  text-shadow: 2px 2px rgb(42, 61, 61);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.why-us p {
+  margin: 0vw 5vw 0vw 5vw;
+  color: #fff;
+  font-size: 1.8vw;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 1024px) {
+  .why-us {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .why-us .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+
+/* TEAM */
+
+.team-title {
+  color: #038222;
+  text-shadow: 1px 1px black;
+  text-align: center;
+  margin-bottom: 35px;
+  margin-top: 90px;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(65, 94, 95, 0.5);
+  padding: 30px 20px;
+  background: rgb(243, 241, 241);
+  margin: auto;
+}
+
+.team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 0 0 30px 0;
+}
+
+.team .member h4 {
+  color: #038222;
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #e7d623;
+}
+
+.team .member p {
+  font-family: 'Courier New', Courier, monospace;
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #867b6f;
+  padding-top: 15px;
+}
+
+.button {
+  background-color: #038222;
+  color: white;
+  text-shadow: 2px 2px 4px black;
+  border: 2px solid #038222;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  border-radius: 50px;
+}
+
+/* Button hover effect */
+.button:hover {
+  background-color: white;
+  color: #038222;
+  border: 1px solid #038222;
+}
+
+/* VISIT US */
+
+.sec-visit {
+  margin: 55px 0px 10px 0px;
+}
+
+.visit-us {
+  color: #038222;
+  font-size: 4vw;
+  text-shadow: 1px 1px black;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.catch-line {
+  text-shadow: 1px 1px #919191;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: -10vw;
+  margin-right: -10vw;
+  color: #e7d623;
+  font-size: 2vw;
+  margin-top: 3vw;
+  margin-bottom: -20px;
+}
+
+.carousel-inner {
+  box-shadow: 0px 0px 30px 15px rgba(65, 94, 95, 0.5);
+}
+
+.carousel-item {
+  min-width: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+}
+
+/* APPOINTMENT */
+
+.hr2 {
+  background-color: #9e948a;
+  width: 20%;
+  height: 2px;
+  display: block;
+  margin-bottom: 30px;
+}
+
+.appointment-title {
+  margin-top: 70px;
+}
+
+.contact .info {
+  border-top: 3px solid #038222;
+  border-bottom: 3px solid #038222;
+  padding: 30px;
+  background: #fff;
+  width: 100%;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #038222;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eaf6ed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #867b6f;
+}
+
+.contact .info p {
+  padding: 0 0 10px 60px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #867b6f;
+}
+
+.contact .info .social-links {
+  padding-left: 10px;
+}
+
+.contact .info .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+  margin-right: 10px;
+}
+
+.contact .info .social-links a:hover {
+  background: #038222;
+  color: #fff;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #038222;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  border-top: 3px solid #038222;
+  border-bottom: 3px solid #038222;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #038222;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #038222;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #038222;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #038222;
+  border: 0;
+  padding: 10px 24px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #038222;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* REVIEWS */
+
+.cta {
+  background-image: url(images/CONTAINER-BGH.png);
+  background-repeat: repeat-x repeat-y;
+  background-size: 900px;
+  background-size: cover;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  background: #038222;
+  padding: 80px 0;
+  box-shadow: 5px 5px 30px 15px rgba(65, 94, 95, 0.5);
+}
+
+.cta-container {
+  height: 33.5vw;
+}
+
+.cta h1 {
+  text-shadow: 2px 2px rgb(42, 61, 61);
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -30px;
+}
+
+.cta p {
+  margin-left: 50px;
+  margin-right: 50px;
+  color: #fff;
+  font-size: 2.1vw;
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+
+/* FUN FACTS */
+
+.carousel-control-prev-icon {
+  background-image: url("images/prev.png") !important;
+  width: 5vw !important;
+  height: 5vw !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url(images/next.png) !important;
+  width: 5vw !important;
+  height: 5vw !important;
+}
+
+
+/*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+
+/* Digital Xray */
+
+.digital-xray-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+
+/* Image with gold border */
+
+.image-with-border img {
+  border: 10px solid #038222;
+  border-radius: 10px;
+  padding: 1px;
+  margin-top: 50px;
+}
+
+.image-with-border p {
+  margin-top: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-indent: 8%;
+  color: #867b6f;
+}
+
+/* Oral Prophylaxis */
+
+.oral-prophylaxis-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+
+/* Orthodontics */
+
+.orthodontics-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+
+/* Tooth Extraction */
+
+.tooth-extraction-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+
+/* Tooth Restoration */
+
+.tooth-restoration-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+
+/* Wisdom Tooth Extraction */
+
+.wisdom-tooth-extraction-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+ 
+
+/* About */
+.mission h1{
+  font-size: 4vw;
+  color: lightgreen;
+  margin-top: 6%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+.mission p {
+  text-indent: 5%;
+  margin-top: 3%;
+  text-align: justify;
+  color: #867b6f;
+  font-size: 1.5vw;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 13px 0px 13px;
+  text-indent: 10%;
+}
+
+.vision h1 {
+  font-size: 4vw;
+  color: lightgreen;
+  margin-top: 6%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 1px 1px 2px black;
+}
+
+.vision p {
+  text-indent: 5%;
+  margin-top: 3%;
+  text-align: justify;
+  color: #867b6f;
+  font-size: 1.5vw;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px 13px 0px 13px;
+  text-indent: 10%;
+}
+
+/* Staff */
+
+.staff-heading {
+  text-align: center;
+  margin-top: 100px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038222;
+  text-shadow: 1px 1px black;
+}
+
+.dentist, .secretary {
+  width: 30%;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dentist img, .secretary img {
+  height: 10%;
+  width: 100%;
+}
+
+.dentist h2, .secretary h2 {
+  color: lightgreen;
+  margin-top: 10%;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+footer {
+  background-image: url(images/CONTAINER-BGH.png);
+  background-repeat: repeat-x repeat-y;
+  background-size: 900px;
+  background-size: cover;
+  margin-top: 90px;
+  background-color: #038222;
+  padding: 75px;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgb(42, 61, 61);
+  font-size: 2vw;
+}
